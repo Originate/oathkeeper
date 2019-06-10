@@ -36,6 +36,8 @@ type ProviderAuthenticators interface {
 
 	AuthenticatorNoopIsEnabled() bool
 
+	AuthenticatorCookieSessionIsEnabled() bool
+
 	AuthenticatorJWTIsEnabled() bool
 	AuthenticatorJWTJWKSURIs() []url.URL
 	AuthenticatorJWTScopeStrategy() fosite.ScopeStrategy
